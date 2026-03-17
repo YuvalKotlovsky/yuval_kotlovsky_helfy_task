@@ -1,0 +1,51 @@
+:root {
+    --filter-bg: #eee;
+    --filter-hover-bg: #ddd;
+    --filter-active-bg: #2196f3;
+    --filter-active-color: #fff;
+    --filter-color: #333;
+    --search-border: #ccc;
+    --search-focus-border: #2196f3;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid var(--search-border);
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    box-sizing: border-box;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: var(--search-focus-border);
+  }
+  
+  .task-filter {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .filter-btn {
+    background: var(--filter-bg);
+    color: var(--filter-color);
+    text-transform: capitalize;
+  }
+  
+  .filter-btn:hover {
+    background: var(--filter-hover-bg);
+  }
+  
+  .filter-active {
+    background: var(--filter-active-bg);
+    color: var(--filter-active-color);
+  }
+  
+  .filter-active:hover {
+    background: var(--filter-active-bg);
+  }
+  

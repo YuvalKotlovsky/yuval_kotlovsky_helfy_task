@@ -1,0 +1,74 @@
+:root {
+  --form-bg: #fff;
+  --form-border: #ddd;
+  --input-border: #ccc;
+  --input-focus-border: #2196f3;
+  --submit-bg: #2196f3;
+  --submit-hover-bg: #1976d2;
+  --cancel-bg: #eee;
+  --cancel-hover-bg: #ddd;
+}
+
+.task-form {
+  background: var(--form-bg);
+  border: 1px solid var(--form-border);
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 16px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 14px;
+}
+
+.form-field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.form-field input,
+.form-field textarea,
+.form-field select {
+  padding: 8px 10px;
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus {
+  outline: none;
+  border-color: var(--input-focus-border);
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.submit-btn {
+  background: var(--submit-bg);
+  color: #fff;
+}
+
+.submit-btn:hover {
+  background: var(--submit-hover-bg);
+}
+
+.cancel-btn {
+  background: var(--cancel-bg);
+  color: #333;
+}
+
+.cancel-btn:hover {
+  background: var(--cancel-hover-bg);
+}
